@@ -6,7 +6,7 @@ from rich.console import Console
 
 console = Console()
 
-SOUNDS_DIR = Path(__file__).parent.parent / "sounds"
+SOUNDS_DIR = Path(__file__).parent / "sounds"
 
 CUSTOM_SOUNDS = {
     "celebrate": os.environ.get("GET2WORK_SOUND_CELEBRATE"),

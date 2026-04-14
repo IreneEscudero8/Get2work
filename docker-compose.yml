@@ -1,0 +1,8 @@
+version: '3'
+services:
+  get2work:
+    build: .
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: get2work --help
