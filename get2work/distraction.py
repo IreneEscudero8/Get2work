@@ -72,3 +72,38 @@ def start_distraction_watcher(interval_seconds: int = 120):
     while True:
         distraction_check()
         time.sleep(interval_seconds)
+        
+        
+def send_notification(app: str):
+    import platform
+    system = platform.system()
+    title = "get2work caught you 👀"
+    msg = f"really? {app}? get back to work."
+
+    try:
+        if system == "Linux":
+            os.system(f'notify-send "{title}" "{msg}"')
+        elif system == "Darwin":
+            os.system(f'osascript -e \'display notification "{msg}" with title "{title}"\'')
+        elif system == "Windows":
+            try:
+                from win10toast import ToastNotifier
+                toaster = ToastNotifier()
+                toaster.show_toast(title, msg, duration=5)
+            except ImportError:
+                pass
+    except Exception:
+        pass
+
+def distraction_check():
+    caught = check_distractions()
+    if caught:
+        increment("distractions_caught")
+        play_shame()
+        send_notification(caught)
+
+        msg = random.choice(CAUGHT_MESSAGES).replace("{app}", caught)
+        console.print(f"\n  [bold red]🚨 DISTRACTION DETECTED[/bold red]")
+        console.print(f"  [red]{msg}[/red]\n")
+        return True
+    return False
