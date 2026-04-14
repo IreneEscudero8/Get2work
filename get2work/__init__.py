@@ -1,0 +1,1 @@
+from get2work import cli
