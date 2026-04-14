@@ -101,7 +101,7 @@ export GET2WORK_SOUND_LEVELUP="/path/to/levelup.mp3"
 
 ##  Tutorial
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10aUtSqItK1U6wZQ5E4ZSvVexkBftkwDH?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IreneEscudero8/Get2work/blob/master/tutorial.ipynb)
 
 ##  Docker
 
