@@ -1,4 +1,4 @@
-# get2work 
+<img width="756" height="193" alt="image" src="https://github.com/user-attachments/assets/306863fb-2c43-4944-97a7-7e06e310b467" /># get2work 
 
 > The Python library that makes you actually work.
 
@@ -101,7 +101,7 @@ export GET2WORK_SOUND_LEVELUP="/path/to/levelup.mp3"
 
 ##  Tutorial
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IreneEscudero8/Get2work/blob/master/tutorial.ipynb)
+[![Open In Colab](https://colab.research.google.com/drive/10aUtSqItK1U6wZQ5E4ZSvVexkBftkwDH?usp=sharing)
 
 ##  Docker
 
